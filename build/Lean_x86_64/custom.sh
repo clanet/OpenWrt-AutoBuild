@@ -73,7 +73,7 @@ uci set firewall.@zone[0].network='lan ipv6'
 EOF
 
 # 修改退出命令到最后
-# sed -i '/exit 0/d' $ZZZ && echo "exit 0" >> $ZZZ
+sed -i '/exit 0/d' $ZZZ && echo "exit 0" >> $ZZZ
 
 # ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● #
 
