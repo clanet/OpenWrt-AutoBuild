@@ -294,7 +294,7 @@ CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin is not set
 # CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin is not set
 
-CONFIG_PACKAGE_luci-app-kcptun=y
+# CONFIG_PACKAGE_luci-app-kcptun=y
 EOF
 
 # Turbo ACC 网络加速:
@@ -318,7 +318,7 @@ CONFIG_PACKAGE_luci-app-nps=n #nps内网穿透
 CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
 CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
 CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
-CONFIG_PACKAGE_luci-app-NetSpeedTest
+# CONFIG_PACKAGE_luci-app-NetSpeedTest
 CONFIG_PACKAGE_luci-app-haproxy-tcp=n #Haproxy负载均衡
 CONFIG_PACKAGE_luci-app-diskman=y #磁盘管理磁盘信息
 CONFIG_PACKAGE_luci-app-transmission=n #Transmission离线下载
@@ -327,7 +327,7 @@ CONFIG_PACKAGE_luci-app-amule=n #电驴离线下载
 CONFIG_PACKAGE_luci-app-xlnetacc=n #迅雷快鸟
 CONFIG_PACKAGE_luci-app-zerotier=y #zerotier内网穿透
 CONFIG_PACKAGE_luci-app-hd-idle=n #磁盘休眠
-CONFIG_PACKAGE_luci-app-netdata=y #netdata
+# CONFIG_PACKAGE_luci-app-netdata=y #netdata
 CONFIG_PACKAGE_luci-app-unblockmusic=n #解锁网易云灰色歌曲
 CONFIG_PACKAGE_luci-app-airplay2=n #Apple AirPlay2音频接收服务器
 CONFIG_PACKAGE_luci-app-music-remote-center=n #PCHiFi数字转盘遥控
