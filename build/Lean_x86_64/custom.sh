@@ -292,7 +292,7 @@ EOF
 # 常用LuCI插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-adbyby-plus=n #adbyby去广告
-CONFIG_PACKAGE_luci-app-webadmin=n #Web管理页面设置
+CONFIG_PACKAGE_luci-app-webadmin=y #Web管理页面设置
 CONFIG_PACKAGE_luci-app-ddns=n #DDNS服务
 CONFIG_DEFAULT_luci-app-vlmcsd=y #KMS激活服务器
 CONFIG_PACKAGE_luci-app-filetransfer=y #系统-文件传输
@@ -313,6 +313,7 @@ CONFIG_PACKAGE_luci-app-amule=n #电驴离线下载
 CONFIG_PACKAGE_luci-app-xlnetacc=n #迅雷快鸟
 CONFIG_PACKAGE_luci-app-zerotier=y #zerotier内网穿透
 CONFIG_PACKAGE_luci-app-hd-idle=n #磁盘休眠
+CONFIG_PACKAGE_luci-app-netdata=y #netdata
 CONFIG_PACKAGE_luci-app-unblockmusic=n #解锁网易云灰色歌曲
 CONFIG_PACKAGE_luci-app-airplay2=n #Apple AirPlay2音频接收服务器
 CONFIG_PACKAGE_luci-app-music-remote-center=n #PCHiFi数字转盘遥控
@@ -322,7 +323,7 @@ CONFIG_PACKAGE_luci-app-jd-dailybonus=n #京东签到服务
 CONFIG_PACKAGE_luci-app-uugamebooster=n #UU游戏加速器
 CONFIG_PACKAGE_luci-app-dockerman=y #Docker管理
 CONFIG_PACKAGE_luci-app-ttyd=n #ttyd
-CONFIG_PACKAGE_luci-app-wireguard=n #wireguard端
+CONFIG_PACKAGE_luci-app-wireguard=y #wireguard端
 #
 # VPN相关插件(禁用):
 #
