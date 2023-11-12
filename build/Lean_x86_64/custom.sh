@@ -11,6 +11,8 @@ cat feeds.conf.default
 # 添加第三方软件包
 git clone https://github.com/db-one/dbone-packages.git -b 18.06 package/dbone-packages
 
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
 # 更新并安装源
 ./scripts/feeds clean
 ./scripts/feeds update -a && ./scripts/feeds install -a -f
@@ -304,6 +306,7 @@ EOF
 
 # 常用LuCI插件:
 cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-oaf=y # appfilter
 CONFIG_PACKAGE_luci-app-adbyby-plus=n #adbyby去广告
 CONFIG_PACKAGE_luci-app-webadmin=y #Web管理页面设置
 CONFIG_PACKAGE_luci-app-ddns=n #DDNS服务
