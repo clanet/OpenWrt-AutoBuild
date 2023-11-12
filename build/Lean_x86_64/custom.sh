@@ -6,12 +6,19 @@
 
 # 更新feeds文件
 # sed -i 's@#src-git helloworld@src-git helloworld@g' feeds.conf.default #启用helloworld
+
+echo 'src-git kenzok8 https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+
 cat feeds.conf.default
 
 # 添加第三方软件包
 git clone https://github.com/db-one/dbone-packages.git -b 18.06 package/dbone-packages
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+git clone --depth=1 https://github.com/neatbasis/bandwidthd.git
+git clone --depth=1 https://github.com/AlexZhuo/luci-app-bandwidthd.git
+
+
 
 # 更新并安装源
 ./scripts/feeds clean
@@ -265,6 +272,7 @@ CONFIG_PACKAGE_luci-app-oaf=y #应用过滤
 CONFIG_PACKAGE_luci-app-openclash=y #OpenClash客户端
 # CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 CONFIG_PACKAGE_luci-app-eqos=y #IP限速
+CONFIG_PACKAGE_luci-app-qos=y
 # CONFIG_PACKAGE_luci-app-control-weburl=y #网址过滤
 # CONFIG_PACKAGE_luci-app-smartdns=y #smartdns服务器
 # CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
@@ -321,6 +329,7 @@ CONFIG_PACKAGE_luci-app-nps=n #nps内网穿透
 CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
 CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
 CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
+CONFIG_PACKAGE_luci-app-bandwidthd=y
 #CONFIG_PACKAGE_luci-app-NetSpeedTest
 CONFIG_PACKAGE_luci-app-haproxy-tcp=n #Haproxy负载均衡
 CONFIG_PACKAGE_luci-app-diskman=y #磁盘管理磁盘信息
